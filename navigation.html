@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>navigation</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <script src="jquery.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(".active").click(function() {
+                $(".b").css("opacity", "0.4");
+                $(".homeicon").css("opacity", "1");
+                $(".active").css("opacity", "1");
+                $(".abouticon").css("opacity", "0.4");
+                $(".c").css("opacity", "0.4");
+                $(".worksicon").css("opacity", "0.4");
+                $(".d").css("opacity", "0.4");
+                $(".contacticon").css("opacity", "0.4");
+            });
+            $(".b").click(function() {
+                $(".active").css("opacity", "0.4");
+                $(".abouticon").css("opacity", "1");
+                $(".b").css("opacity", "1");
+                $(".homeicon").css("opacity", "0.4");
+                $(".c").css("opacity", "0.4");
+                $(".worksicon").css("opacity", "0.4");
+                $(".d").css("opacity", "0.4");
+                $(".contacticon").css("opacity", "0.4");
+            });
+            $(".c").click(function() {
+                $(".active").css("opacity", "0.4");
+                $(".homeicon").css("opacity", "0.4");
+                $(".worksicon").css("opacity", "1");
+                $(".c").css("opacity", "1");
+                $(".b").css("opacity", "0.4");
+                $(".abouticon").css("opacity", "0.4");
+                $(".d").css("opacity", "0.4");
+                $(".contacticon").css("opacity", "0.4");
+            });
+            $(".d").click(function() {
+                $(".active").css("opacity", "0.4");
+                $(".homeicon").css("opacity", "0.4");
+                $(".c").css("opacity", "0.4");
+                $(".worksicon").css("opacity", "0.4");
+                $(".b").css("opacity", "0.4");
+                $(".abouticon").css("opacity", "0.4");
+                $(".contacticon").css("opacity", "1");
+                $(".d").css("opacity", "1");
+            });
+
+
+
+        });
+
+    </script>
+</head>
+
+<body>
+    <div class="profile-pic">
+        <img src="WhatsApp%20Image%202019-01-27%20at%2012.24.57%20PM%20(2).jpeg">
+        <p>GokulNaidu</p>
+        <h5>Game Tester</h5>
+    </div>
+    <div class="nav">
+        <ul>
+            <li class="homeicon">
+                <img class="icon">
+                <i class="fas fa-home"></i>
+
+                <a class="active" href="home.html" target="rightframe">Home</a></li>
+
+            <li class="abouticon">
+                <img class="icon">
+                <i class="fas fa-user-alt"></i>
+                <a href="about.html" target="rightframe" class="b">About</a></li>
+
+            <li class="worksicon">
+                <img class="icon">
+                <i class="fas fa-briefcase"></i>
+
+                <a href="gallery.html" target="rightframe" class="c">Works</a></li>
+            <li class="contacticon">
+                <img class="icon">
+                <i class="fas fa-envelope"></i>
+                <a href="contact.html" target="rightframe" class="d">Contact</a></li>
+
+
+
+        </ul>
+        <div class="social-media">
+            <a href="https://www.twitter.com" target="rightframe">
+                <i class="fab fa-twitter"></i></a>
+                <a href="https://www.facebook.com/login/" target="rightframe">
+            <i class="fab fa-facebook"></i>
+        </a>
+           <a href="https://www.instagram.com/?hl=en" target="rightframe">
+               <i class="fab fa-instagram"></i></a>
+               <a href="https://login.mailchimp.com/?msclkid=8282a273597019613508fe230310235c&ds_rl=1260760&gclid=CLTe8riRk-ACFdDXjgodbAIMNA&gclsrc=ds&wcookie=f30709db59f49274ab90">
+            <i class="fab fa-mailchimp"></i>
+            </a>
+        </div>
+    </div>
+
+    <style>
+        body {
+            background-color: #120f09;
+            font-family: serif;
+            margin: 0;
+            padding: 0;
+            background: url(acbq0zts1xe11.jpg) no-repeat;
+            background-position: center;
+            background-size: cover;
+            height: 650px;
+        }
+
+        .profile-pic {
+            height: 100px;
+            width: 100px;
+            background: white;
+            margin: 20px 10px 100px 150px;
+            position: relative;
+            border-radius: 50%;
+            border: 4px solid orange;
+               transform: scale(1);
+            -webkit- transform: scale(1);
+
+        }
+
+        .profile-pic img {
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            position: absolute;
+           
+        }
+            .profile-pic:hover
+        {
+                transform: scale(1.1);
+            -webkit- transform: scale(1.1);
+                
+        }
+
+        p {
+            color: white;
+            position: absolute;
+            padding-top: 85px;
+            font-size: 20px;
+
+        }
+
+        h5 {
+            color: ;
+            position: absolute;
+            padding-top: 120px;
+            font-family: serif;
+            opacity: 0.7;
+
+        }
+
+        ul {
+            list-style: none;
+            font-size: 25px;
+            position: relative;
+            margin-left: 90px;
+        }
+
+        li {
+            color: pink;
+            padding: 10px;
+            text-decoration: none;
+            transform: scale(1);
+            -webkit- transform: scale(1);
+        }
+        li:hover
+        {
+              transform: scale(1.1);
+            -webkit- transform: scale(1.1);
+            
+        }
+
+        .fas fa-home {
+            position: relative;
+            margin-top: 10px;
+        }
+
+        i {
+            font-size: 20px;
+        }
+
+        a {
+            color: wheat;
+            text-decoration: none;
+        }
+
+        .social-media i {
+            color: pink;
+            font-size: 30px;
+            padding: 4px;
+            margin-top: 150px;
+            transform: scale(1);
+            -webkit-transform: scale(1);
+            
+        }
+        .social-media i:hover{
+               transform: scale(1.2);
+            -webkit-transform: scale(1.2);
+            
+        }
+
+        .social-media {
+            margin-left: 110px;
+        }
+
+    </style>
+
+</body>
+
+</html>
